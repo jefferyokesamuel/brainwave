@@ -1,13 +1,13 @@
-import { companyLogos } from "../constants";
+import { partners } from "../constants";
 
-const CompanyLogos = ({ className }) => {
+const Partners = ({ className }) => {
   return (
     <div className={className}>
       <h5 className="tagline mb-6 text-center text-n-1/50">
-        Industry experts building on
+        Some of our Partners
       </h5>
       <ul className="flex">
-        {companyLogos.map((logo, index) => (
+        {partners.map((logo, index) => (
           <li
             className="flex items-center justify-center flex-1 h-[8.5rem]"
             key={index}
@@ -20,4 +20,4 @@ const CompanyLogos = ({ className }) => {
   );
 };
 
-export default CompanyLogos;
+export default Partners;

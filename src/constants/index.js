@@ -33,29 +33,34 @@ import {
   sliders04,
   telegram,
   twitter,
-  yourlogo,
+  linkedin,
 } from "../assets";
+
+import bitcoin from "../assets/bitcoin.png"
+import eth from "../assets/eth.png"
+import polygon from "../assets/polygon.png"
+import ton from "../assets/ton.png"
+import solana from "../assets/solana.png"
+
+import shiga from "../assets/shiga.png"
+import coino from "../assets/coino.png"
+import greybox from "../assets/greybox.png"
 
 export const navigation = [
   {
     id: "0",
-    title: "Features",
+    title: "Services",
     url: "#features",
   },
   {
     id: "1",
-    title: "Pricing",
-    url: "#pricing",
+    title: "Use Cases",
+    url: "#roadmap",
   },
   {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
-  },
-  {
-    id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
+    title: "Our Process",
+    url: "#collaboration",
   },
   {
     id: "4",
@@ -75,7 +80,11 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [bitcoin, eth, polygon, ton, solana];
+
+export const partners = [shiga, coino, greybox]
+
+
 
 export const brainwaveServices = [
   "Photo generating",
@@ -94,37 +103,30 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap1,
-    colorful: true,
-  },
-  {
-    id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
+    title: "Game Character NFTs & Collectibles",
+    text: "We help game studios and developers turn their characters into unique NFTs or digital collectibles. Our service enhances community engagement by allowing players to own, trade and collect exclusive in-game assets. We provide seamless integration of blockchain technology to bring your game characters to life as one-of-a-kind digital assets.",
     date: "May 2023",
     status: "progress",
     imageUrl: roadmap2,
   },
   {
+    id: "1",
+    title: "Crypto Integration for Casinos",
+    text: "We specialize in helping online sports betting platforms and casinos integrate cryptocurrency support for user deposits. Our service enables seamless, secure, and fast crypto transactions, offering your users more flexibility and privacy while enhancing your platform’s appeal in the digital age",
+    date: "May 2023",
+    status: "done",
+    imageUrl: roadmap1,
+  },
+  {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
+    title: "Lead Generation",
+    text: "We help Web3 and blockchain projects generate and convert leads. By leveraging targeted outreach and effective lead generation strategies, we ensure your innovative solutions connect with the right audience, driving engagement and fostering growth.",
     date: "May 2023",
     status: "done",
     imageUrl: roadmap3,
+    colorful: true,
   },
-  {
-    id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
-    status: "progress",
-    imageUrl: roadmap4,
-  },
+
 ];
 
 export const collabText =
@@ -133,18 +135,38 @@ export const collabText =
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
-    text: collabText,
+    title: "Ideation",
+    text: "In this phase, we explore the client's vision and identify potential use cases for blockchain technology, aligning the goals of the project with its intended impact.",
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Assessment",
+    text: "We evaluate the feasibility of the proposed solution by analyzing the current infrastructure, project requirements, and potential challenges, ensuring blockchain is the right fit.",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Technical Component Definition",
+    text: "This involves defining the core technical elements of the project, such as the blockchain platform, consensus mechanisms, smart contracts, and any integrations needed.",
   },
 ];
+
+export const collabContent2 = [
+  {
+    id: "0",
+    title: "POC",
+    text: "We create a small-scale prototype to test the concept in a real-world environment, validating the solution's functionality and its ability to meet business goals.",
+  },
+  {
+    id: "1",
+    title: "Integration",
+    text: "The blockchain solution is integrated with existing systems, including APIs, databases, and external platforms, ensuring seamless functionality and interoperability.",
+  },
+  {
+    id: "2",
+    title: "Development",
+    text: "In this final phase, we develop the full solution, including all components, ensuring security, scalability, and efficiency before deployment.",
+  },
+]
 
 export const collabApps = [
   {
@@ -244,16 +266,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Blockchain Legal Consulting",
+    text: "We offer expert legal counseling to help you navigate the legal and regulatory challenges of blockchain and crypto assets. <br /> <br />From ICOs and decentralized apps to blockchain-based ETFs and other solutions, we ensure your operations are compliant and secure",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "NFT Project Launch",
+    text: "Launch your NFT project with confidence and expertise. We provide end-to-end support, from ideation and design to development and marketplace strategy.<br /> <br />Whether you're creating collectible assets, digital art, or utility NFTs, our team ensures a successful launch",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -261,16 +283,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Product Market Fit",
+    text: "Achieving product-market fit is every project's goal. We make it easier by conducting in-depth research to align your product with market demand, refine your value proposition and optimize your user experience. <br /> <br />Our approach ensures that your blockchain/crypto project resonates with your target audience",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Lead Generation and Outreach",
+    text: "Building the best Layer 2 solution or SaaS platform is one thing; getting users is another. We help you bridge that gap by connecting you with the right users through strategic lead generation and targeted outreach, ensuring your solution reaches its ideal audience and achieves growth.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -278,16 +300,8 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "./src/assets/benefits/card-5.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
-  },
-  {
-    id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Tokenomics",
+    text: "Tokenomics is about more than numbers—it’s about community and lasting value. We design token models that drive engagement, reward loyalty, and support sustainable growth. <br /> <br />From governance to staking, our strategies align with your vision, creating real utility and a loyal user base.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -296,33 +310,21 @@ export const benefits = [
 
 export const socials = [
   {
-    id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
-  {
     id: "1",
     title: "Twitter",
     iconUrl: twitter,
     url: "#",
   },
   {
-    id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
-  },
-  {
     id: "3",
     title: "Telegram",
     iconUrl: telegram,
-    url: "#",
+    url: "http://t.me/jefferyokesamuel",
   },
   {
     id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
+    title: "Linkedin",
+    iconUrl: linkedin,
     url: "#",
   },
 ];

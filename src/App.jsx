@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Pricing from "./components/Pricing";
 import Roadmap from "./components/Roadmap";
+import ContactUs from "./components/Contactus";
 import Services from "./components/Services";
 
 const App = () => {
@@ -15,10 +16,9 @@ const App = () => {
         <Header />
         <Hero />
         <Benefits />
-        <Collaboration />
-        <Services />
-        <Pricing />
         <Roadmap />
+        <Collaboration />
+        <ContactUs />
         <Footer />
       </div>
 
